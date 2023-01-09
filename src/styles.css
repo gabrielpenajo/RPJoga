@@ -1,0 +1,12 @@
+@import "variables.css";
+
+body {
+    margin: 0;
+}
+
+.test {
+    width: 100vw;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: var(--main);
+}
