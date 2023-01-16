@@ -1,53 +1,52 @@
 @import "variables.css";
 @import url("https://fonts.googleapis.com/css?family=Comic+Neue");
+@import 'material-icons/iconfont/material-icons.css';
+
 body {
     margin: 0;
 }
 
-.test {
-    width: 100vw;
-    height: 100vh;
-    color: var(--white);
-    box-sizing: border-box;
-    background-color: var(--main);
-    display: flex;
-    place-items: center;
-    justify-content: center;
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px;
+    }
 }
 
-#cb1 {
-    display: none;
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px;
+    }
 }
 
-h1 {
-    font-family: "Comic Neue";
-    text-align: center;
+@media (min-width: 992px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px;
+    }
 }
 
-h1:hover {
-    color: yellow;
+@media (min-width: 768px) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+    }
 }
 
-div label img {
-    max-height: 50vh;
-}
-
-#cb1:not(:checked) + div .first {
-    display: flex;
-}
-
-#cb1:checked + div .first {
-    display: none;
-}
-
-#cb1:not(:checked) + div .second {
-    display: none;
-}
-
-#cb1:checked + div .second {
-    display: flex;
-}
-
-label:hover {
-    cursor: pointer;
+@media (min-width: 576px) {
+    .container,
+    .container-sm {
+        max-width: 540px;
+    }
 }
