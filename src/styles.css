@@ -1,12 +1,53 @@
 @import "variables.css";
-
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue");
 body {
     margin: 0;
 }
 
 .test {
     width: 100vw;
-    height: 300px;
+    height: 100vh;
+    color: var(--white);
     box-sizing: border-box;
     background-color: var(--main);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+#cb1 {
+    display: none;
+}
+
+h1 {
+    font-family: "Comic Neue";
+    text-align: center;
+}
+
+h1:hover {
+    color: yellow;
+}
+
+div label img {
+    max-height: 50vh;
+}
+
+#cb1:not(:checked) + div .first {
+    display: flex;
+}
+
+#cb1:checked + div .first {
+    display: none;
+}
+
+#cb1:not(:checked) + div .second {
+    display: none;
+}
+
+#cb1:checked + div .second {
+    display: flex;
+}
+
+label:hover {
+    cursor: pointer;
 }
