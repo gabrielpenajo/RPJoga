@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles.css">
     <title>RPJoga</title>
-    
+
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
@@ -16,43 +17,55 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-    
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="tailwindOutput.css" rel="stylesheet">
     <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
     <div class="flex flex-col md:flex-row">
         <div class="basis-1/2 flex flex-col p-4 gap-8">
-          	<div class="flex flex-row gap-1">
-            	<span class="sr-only w-8 aspect-square ">RPJoga</span>
-            	<img class="h-10" src="src/resources/RPJoga1000.png" alt="">
-            	<h2 class="font-semibold text-main text-3xl">RPJoga</h2>
-			</div>
-			<div>
-				<p class="font-bold text-7xl text-neutral">
-					ENCONTRE <br> MESAS <br> DE <br>
-					<span class="text-main">RPG</span><br>
-					EM <br> QUALQUER <br> LUGAR!
-				</p>
-			</div>
-		</div>
+            <div class="flex flex-row justify-between">
+                <div class="flex flex-row gap-1">
+                    <span class="sr-only w-8 aspect-square ">RPJoga</span>
+                    <img class="h-10" src="src/resources/RPJoga1000.png" alt="">
+                    <h2 class="font-semibold text-main text-3xl">RPJoga</h2>
+                </div>
+                <div class="h-12 w-full flex flex-row-reverse gap-2 items-center md:hidden">
+                    <a href="/sign-up.html"
+                        class="outline outline-2 bg-transparent ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent px-4 py-2 text-base font-medium text-main shadow-sm hover:bg-secondary">Cadastrar</a>
+                    <a href="/login.html"
+                        class="whitespace-nowrap text-base font-medium text-main hover:text-secondary">Login</a>
+                </div>
+            </div>
+            <div>
+                <p class="font-bold text-7xl text-neutral">
+                    ENCONTRE <br> MESAS <br> DE <br>
+                    <span class="text-main">RPG</span><br>
+                    EM <br> QUALQUER <br> LUGAR!
+                </p>
+            </div>
+        </div>
         <div class="basis-1/2 bg-main pt-2 pr-4 flex flex-col">
-			<div class="h-12 w-full flex flex-row-reverse gap-2 items-center">
-				<a href="/sign-up.html" class="outline outline-2 bg-transparent ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">Cadastrar</a>
-				<a href="/login.html" class="whitespace-nowrap text-base font-medium text-white hover:text-secondary">Login</a>
-			</div>
-			<div>
-				<img class="scale-75 flex-grow-0" src="/static/Group Chat-bro.svg" alt="Group Chat illustration">
-			</div>
-		</div>
+            <div class="h-12 w-full md:flex flex-row-reverse gap-2 items-center hidden">
+                <a href="/sign-up.html"
+                    class="outline outline-2 bg-transparent ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">Cadastrar</a>
+                <a href="/login.html"
+                    class="whitespace-nowrap text-base font-medium text-white hover:text-secondary">Login</a>
+            </div>
+            <div>
+                <img class="scale-75 flex-grow-0" src="/static/Group Chat-bro.svg" alt="Group Chat illustration">
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
