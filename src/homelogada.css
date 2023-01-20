@@ -1,0 +1,15 @@
+#menuToggle:not(:checked) ~ div {
+    display: none !important;
+}
+
+#menuToggle:checked ~ div {
+    display: block;
+}
+
+label * {
+    pointer-events: none;
+}
+
+label {
+    cursor: pointer !important;
+}

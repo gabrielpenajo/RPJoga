@@ -34,78 +34,94 @@
 </head>
 <body>  
   <div class="relative bg-main">
-          <div class="mx-auto max-w-7xl px-6">
-            <div class="flex items-center justify-between py-6 md:justify-start md:space-x-10">
-              <div class="flex justify-start lg:w-0 lg:flex-1">
-                <a href="/homelogada.html">
-                  <span class="sr-only">RPJoga</span>
-                  <img class="h-8 w-auto sm:h-10" src="src/resources/RPJoga1000.png" alt="">
-                </a>
-              </div>
-              <label for="menuToggle" class="-my-2 -mr-2 md:hidden bg-main hover:bg-secondary rounded-md">
-                <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
-                  <span class="sr-only">Abrir menu</span>
-                  <!-- Heroicon name: outline/bars-3 -->
-                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-                </button>
-              </label>
-              <nav class="hidden space-x-10 md:flex">
-                <a href="#" class="text-base font-medium text-white hover:text-secondary">RPGs</a>
-                <a href="#" class="text-base font-medium text-white hover:text-secondary">Meu perfil</a>
-              </nav>
-              <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-                <a href="/login.html" class="whitespace-nowrap text-base font-medium text-white hover:text-secondary">Sair</a>
-              </div>
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="flex items-center justify-between py-6 md:justify-start md:space-x-10">
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+          <a href="/homelogada.html">
+            <span class="sr-only">RPJoga</span>
+            <img class="h-8 w-auto sm:h-10" src="src/resources/RPJoga1000.png" alt="">
+          </a>
+        </div>
+        <label for="menuToggle" class="-my-2 -mr-2 md:hidden bg-main hover:bg-secondary rounded-md">
+          <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+            <span class="sr-only">Abrir menu</span>
+            <!-- Heroicon name: outline/bars-3 -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </label>
+        <nav class="hidden space-x-10 md:flex">
+          <a href="#" class="text-base font-medium text-white hover:text-secondary">RPGs</a>
+          <a href="#" class="text-base font-medium text-white hover:text-secondary">Meu perfil</a>
+        </nav>
+        <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+          <a href="/login.html" class="whitespace-nowrap text-base font-medium text-white hover:text-secondary">Sair</a>
+        </div>
+      </div>
+    </div>
+
+    <input type="checkbox" id="menuToggle" hidden>
+    <div class="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
+      <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+        <div class="px-5 pt-5 pb-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <img class="h-8 w-auto" src="src/resources/RPJoga1000.png" alt="RPJoga">
             </div>
+            <label class="rounded-md pl-2 pt-2 pr-2 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 -mr-2 items-center justify-center" for="menuToggle">
+              <button type="button" class="inline-flex hover:text-gray-500 text-gray-400 items-center justify-center">
+                <span class="sr-only">Fechar menu</span>
+                <!-- Heroicon name: outline/x-mark -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </label>
           </div>
-    
-          <input type="checkbox" id="menuToggle" hidden>
-          <div class="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
-            <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
-              <div class="px-5 pt-5 pb-6">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <img class="h-8 w-auto" src="src/resources/RPJoga1000.png" alt="RPJoga">
-                  </div>
-                  <label class="rounded-md pl-2 pt-2 pr-2 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 -mr-2 items-center justify-center" for="menuToggle">
-                    <button type="button" class="inline-flex hover:text-gray-500 text-gray-400 items-center justify-center">
-                      <span class="sr-only">Fechar menu</span>
-                      <!-- Heroicon name: outline/x-mark -->
-                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                  </label>
-                </div>
-                <div class="mt-6">
-                  <nav class="grid gap-y-8">
-                    <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
-                      <!-- Heroicon name: outline/chart-bar -->
-                      <span class="material-symbols-outlined text-main">
-                        account_circle
-                      </span>
-                      <span class="ml-3 text-base font-medium text-gray-900">Meu perfil</span>
-                    </a>
-        
-                    <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
-                      <!-- Heroicon name: outline/cursor-arrow-rays -->
-                      <span class="material-symbols-outlined text-main">
-                        book
-                      </span>
-                      <span class="ml-3 text-base font-medium text-gray-900">RPGs</span>
-                    </a>
-                  </nav>
-                </div>
-              </div>
-              <div class="space-y-6 py-6 px-5">
-                <div>
-                  <a href="/index.html" class="flex w-full items-center justify-center rounded-md border border-transparent bg-main px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">Sair</a>
-                </div>
-              </div>
-            </div>
+          <div class="mt-6">
+            <nav class="grid gap-y-8">
+              <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                <!-- Heroicon name: outline/chart-bar -->
+                <span class="material-symbols-outlined text-main">
+                  account_circle
+                </span>
+                <span class="ml-3 text-base font-medium text-gray-900">Meu perfil</span>
+              </a>
+  
+              <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                <!-- Heroicon name: outline/cursor-arrow-rays -->
+                <span class="material-symbols-outlined text-main">
+                  book
+                </span>
+                <span class="ml-3 text-base font-medium text-gray-900">RPGs</span>
+              </a>
+            </nav>
           </div>
         </div>
+        <div class="space-y-6 py-6 px-5">
+          <div>
+            <a href="/index.html" class="flex w-full items-center justify-center rounded-md border border-transparent bg-main px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">Sair</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center w-full">
+    <div class="flex flex-col md:w-2/3">
+      <h1 class="p-4 font-semibold text-xl">Mais recentes</h1>
+      <div class="flex flex-col h-96 overflow-y-scroll">
+        <div class="flex flex-col md:flex-row">
+          <div class="basis-1/2 bg-main p-2">
+            Oi
+          </div>
+          <div class="basis-1/2 p-2">
+            Tchau
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
