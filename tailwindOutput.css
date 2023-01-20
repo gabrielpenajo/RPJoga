@@ -644,6 +644,10 @@ video {
   height: 4rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -912,6 +916,18 @@ video {
 
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-base {
