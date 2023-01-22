@@ -32,7 +32,7 @@
 
 <body>
     <div class="flex flex-col md:flex-row">
-        <div class="basis-1/2 flex flex-col p-4 gap-8">
+        <div class="basis-1/2 flex flex-col p-4 gap-8 md:h-screen">
             <div class="flex flex-row justify-between">
                 <div class="flex flex-row gap-1">
                     <span class="sr-only w-8 aspect-square ">RPJoga</span>
@@ -46,12 +46,14 @@
                         class="whitespace-nowrap text-base font-medium text-main hover:text-secondary">Login</a>
                 </div>
             </div>
-            <div>
-                <p class="font-bold text-7xl text-neutral">
-                    ENCONTRE <br> MESAS <br> DE <br>
-                    <span class="text-main">RPG</span><br>
-                    EM <br> QUALQUER <br> LUGAR!
-                </p>
+            <div class="flex flex-row gap-2 flex-wrap md:flex-col flex-grow h-full font-bold text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-neutral"">
+                <span>ENCONTRE</span>
+                <span>MESAS</span>
+                <span>DE</span>
+                <span class="text-main">RPG</span>
+                <span>EM</span>
+                <span>QUALQUER</span>
+                <span>LUGAR!</span>
             </div>
         </div>
         <div class="basis-1/2 bg-main pt-2 pr-4 flex flex-col">
@@ -62,7 +64,7 @@
                     class="whitespace-nowrap text-base font-medium text-white hover:text-secondary">Login</a>
             </div>
             <div>
-                <img class="scale-75 flex-grow-0" src="/static/Group Chat-bro.svg" alt="Group Chat illustration">
+                <img class="flex-shrink" src="/static/Group Chat-bro.svg" alt="Group Chat illustration">
             </div>
         </div>
     </div>
